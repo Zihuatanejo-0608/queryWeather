@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="autoTestSuite">
+    <test name="testNGDemo">
+        <!--包维度执行-->
+        <!--<packages>-->
+        <!--<package name="testNGDemo" />-->
+        <!--</packages>-->
+
+        <!-- ********************************************************-->
+
+        <!--类维度执行-->
+        <classes>
+            <class name="queryServiceTest.QueryWeather" />
+        </classes>
+
+        <!-- ********************************************************-->
+
+    </test>
+</suite>
