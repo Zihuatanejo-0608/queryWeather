@@ -63,7 +63,7 @@
                     </argLine>
                     <suiteXmlFiles>
                         <!--指定要执行的testngXml路径 -->
-                        <suiteXmlFile>src/test/java/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <!-- 出现测试异常是否继续向下执行，此选项必备，防止异常测试结果导致执行中断 -->
                     <testFailureIgnore>true</testFailureIgnore>
