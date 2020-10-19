@@ -13,6 +13,7 @@
         <!--类维度执行-->
         <classes>
             <class name="queryServiceTest.QueryWeather" />
+            <class name="queryServiceTest.QueryWeatherExcel" />
         </classes>
 
         <!-- ********************************************************-->
