@@ -26,10 +26,12 @@ public class QueryWeatherExcel {
     @Test(description = "天气查询",dataProvider = "cityCodeData")
     public void queryWeather(Map<String,String> map){
 
+        HuToolHttpUnit httpRequest = new HuToolHttpUnit();
+
         String cityCode = map.get("cityCode");
         String url = urlHead + cityCode + ".html";
         //执行请求
-        JSONObject response = HuToolHttpUnit.get(url, null, null);
+        JSONObject response = httpRequest.get(url);
         //从返回json中获取需要的信息
         JSONObject weatherinfo = response.getJSONObject("weatherinfo");
         String cityName = weatherinfo.getStr("city");

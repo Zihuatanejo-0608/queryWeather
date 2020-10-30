@@ -1,6 +1,7 @@
 package toolsUnit;
 
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.lang.Console;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -49,7 +50,7 @@ public class ExcelUnit {
                 arrmap[i][0] = new HashMap<>();
             }
         }else {
-            System.out.println("excel中没有数据!");
+            Console.log("excel中没有数据!");
         }
         //获取列名,作为hashmao的key
         for (int c = 0; c < columns; c++){
@@ -69,7 +70,7 @@ public class ExcelUnit {
     //本地取文件相对路径
     public String getPath(){
         String absolutePath = FileUtil.getAbsolutePath(excelName);
-        System.out.println("数据资源路径:" + absolutePath);
+        Console.log("数据资源路径:" + absolutePath);
         return absolutePath;
     }
 
