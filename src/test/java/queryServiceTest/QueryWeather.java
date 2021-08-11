@@ -1,7 +1,6 @@
 package queryServiceTest;
 
 import cn.hutool.json.JSONObject;
-import httpUnit.HtmlUnit;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
